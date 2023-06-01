@@ -1,0 +1,14 @@
+Package: tPG
+Type: Package
+Title: Forecasting Recruitments via the Time-Dependent Poisson-Gamma Model
+Version: 0.1.0
+Author: Armando Turchetta <armando.turchetta@gmail.com>
+Maintainer: Armando Turchetta <armando.turchetta@gmail.com>
+Description: This package contains the functions needed to forecast recruitments in multicenter clinical studies via the time-depependent Poisson-Gamma (tPG) model (https://arxiv.org/abs/2301.03710). 
+License: GPL-3
+Imports: 
+    nloptr,
+    splines2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
