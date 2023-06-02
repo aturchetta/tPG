@@ -32,6 +32,6 @@ sim_data <- sim_rec(alpha = 1, p1 = 10, p2 = 0.15, c2 = 0.3, c1 = 0.1,
 type = "cdf", t_p = 150, Tmax = 200, s_time = 1:100, C_act = 30, random_init = TRUE)
 
 est <- tPG_est(data = sim_data$data, t_int = 200 , tp_start = c(20, 60, 100, 140), degree = c(2, 3), den = c(NA, 2, 3) )
-pred_1 <- tPG_pred(est = est, start_init = sim_data$start, N=5000, tpred = 201:900, conf_level = 0.95)
-tPG_plot(pred = pred_1, xlim=c(0,550), ylim=c(0,5500), print_T = TRUE, xlab = "Days", ylab = "Enrollments", main = "Forecasted recruitments")
+pred <- tPG_pred(est = est, start_init = sim_data$start, N=5000, tpred = 201:900, conf_level = 0.95)
+tPG_plot(pred = pred, xlim=c(0,550), ylim=c(0,5500), print_T = TRUE, xlab = "Days", ylab = "Enrollments", main = "Forecasted recruitments")
 }
